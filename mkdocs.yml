@@ -1,0 +1,12 @@
+site_name: senior-school-guide   # 网站名称
+theme:
+  name: material    # 使用 Material 主题
+  features:
+    - navigation.tabs       # 启用标签页
+    - search.suggest         # 搜索建议
+  palette:
+    primary: indigo          # 主色调
+    accent: blue             # 强调色
+nav:
+  - 首页: index.md
+  - 页面1: page1.md
