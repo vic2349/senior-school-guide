@@ -1,4 +1,4 @@
-site_name: senior-school-guide   # 网站名称
+site_name: 高中学习与生活质量指北   # 网站名称
 theme:
   name: material    # 使用 Material 主题
   features:
@@ -9,4 +9,3 @@ theme:
     accent: blue             # 强调色
 nav:
   - 首页: index.md
-  - 页面1: page1.md
