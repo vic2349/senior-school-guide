@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+高中学习与生活质量指北
+这是什么项目？
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+这是一个受 https://colleges.chat 启发的项目，意在收集全国各高中招生时不会写明，却会实实在在影响高中生生活和学习质量的要求与细节。
 
-## Commands
+查询 & 贡献 & 提问
+问卷资料查询请前往
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+贡献、提问、部分资料查询请前往 Discussions
 
-## Project layout
+参考 FAQ
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+
+
+LICENSE
+CC BY-NC-SA 4.0
+
+如有其它 LICENSE 会注明。
+
+如果有侵权、不实信息请联系进行删除。

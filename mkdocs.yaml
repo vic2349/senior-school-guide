@@ -1,0 +1,31 @@
+site_name: 高中学习与生活质量指北   # 网站名称
+theme:
+  name: material    # 使用 Material 主题
+  features:
+    - navigation.tabs       # 启用标签页
+    - search.suggest         # 搜索建议
+  palette:
+    primary: indigo          # 主色调
+    accent: blue             # 强调色
+nav:
+  - 首页: index.md
+  - 择校相关:
+    - 页面一: page1.md
+    - 页面二: page2.md
+  - 问卷数据:
+      - 湖北:
+          - 武汉市:
+              - 武汉市第十六中学: hubei/wuhan/school_16.md
+              - 武汉市民族中学: hubei/wuhan/school_minzu.md
+              - 武汉市第二十中学: hubei/wuhan/school_20.md
+              - 武汉市第二中学: hubei/wuhan/school_2.md
+              - 武汉市实验学校: hubei/wuhan/school_experimental.md
+              - 武汉市育才高级中学: hubei/wuhan/yucai_high.md
+              - 武汉育才美术高级中学: hubei/wuhan/yucai_art.md
+              - 武汉市第六中学: hubei/wuhan/school_6.md
+              - 武汉市第十九中学: hubei/wuhan/school_19.md
+              - 武汉外国语学校: hubei/wuhan/foreign_language.md
+              - 武汉市第一中学: hubei/wuhan/school_1.md
+              - 武汉市第七中学: hubei/wuhan/school_7.md
+              
+
