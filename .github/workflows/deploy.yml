@@ -1,0 +1,37 @@
+name: Deploy Website
+
+on:
+  push:
+    branches: [main]  # 当 main 分支有推送时触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 使用 GitHub 的 Linux 服务器
+    
+    steps:
+    # 步骤1：获取代码
+    - name: Checkout code
+      uses: actions/checkout@v3  # 下载您的代码
+    
+    # 步骤2：设置 Python 环境
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'  # 使用最新 Python 3
+    
+    # 步骤3：安装 MkDocs
+    - name: Install dependencies
+      run: pip install mkdocs mkdocs-material  # 安装必要工具
+    
+    # 步骤4：构建网站
+    - name: Build site
+      run: mkdocs build --strict  # 生成网站文件
+    
+    # 步骤5：部署到 GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3  # 专用部署工具
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # 自动认证
+        publish_dir: ./site  # 构建好的网站目录
+        publish_branch: gh-pages  # 部署到这个分支
+        force_orphan: true  # 每次完全覆盖旧内容

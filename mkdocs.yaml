@@ -11,8 +11,10 @@ theme:
     accent: blue
 
 extra:
+  include:
+    - .nojekyll
   exclude: 
-    - .github/  # 排除无关目录
+    - .github/  
 
 nav:
   - 首页: index.md
