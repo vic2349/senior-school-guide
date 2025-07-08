@@ -7,7 +7,7 @@ theme:
     - navigation.tabs
     - search.suggest
   palette:
-    primary: light blue
+    primary: indigo
     accent: cyan
   language: zh 
 
