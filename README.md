@@ -1,8 +1,10 @@
-# 一些高中的学习和生活质量
+# 高中的学习和生活质量
+[https://619.edu.deal](https://619.edu.deal)
+[https://12315.pp.ua](https://12315.pp.ua)
 
-这是什么项目？
+## 这是什么项目？
 
-这是一个受https://colleges.chat/启发的资料汇总项目，意在收集湖北省各高中招生时不会写明但实实在在影响高中学习与生活质量的详尽信息。
+这是一个受[https://colleges.chat/](https://colleges.chat/])启发的资料汇总项目，意在收集湖北省各高中招生时不会写明但实实在在影响高中学习与生活质量的详尽信息。
 
 ## 查询 & 贡献 & 提问
 问卷资料查询请前往 [https://vic2349.github.io/senior-school-guide/](https://vic2349.github.io/senior-school-guide/)
