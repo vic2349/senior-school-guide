@@ -1,4 +1,4 @@
-# 高中的学习和生活质量
+# 高中学习与生活质量指北
 [https://619.edu.deal](https://619.edu.deal)
 [https://12315.pp.ua](https://12315.pp.ua)
 
