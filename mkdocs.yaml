@@ -154,7 +154,8 @@ nav:
         - 武汉市新洲区城关高级中学: schools/wu-han-shi-xin-zhou-qu-cheng-guan-gao-ji-zhong-xue.md
         - 武汉市新洲区阳逻高级中学: schools/wu-han-shi-xin-zhou-qu-yang-luo-gao-ji-zhong-xue.md
 extra_css:
-  - extra.css
+  - stylesheets/custom.css
+  - stylesheets/extra.css
   - https://fontsapi.zeoseven.com/292/main/result.css
 hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
