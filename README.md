@@ -13,5 +13,7 @@
 
 贡献、提问、部分资料查询请前往 Discussions 或 添加管理人员QQ
 
+## LICENSE 
+[Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
 
-### 如果有侵权、不实信息请联系进行删除。
+如果有侵权、不实信息请联系进行删除。

@@ -19,4 +19,7 @@
 感谢各位开发者在[仓库](https://vic2349.github.io/senior-school-guide/)的贡献，您的付出将让本站更加完善。
 
 
-### 如果有侵权、不实信息请联系进行删除。
+## LICENSE 
+[Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+
+如果有侵权、不实信息请联系进行删除。
