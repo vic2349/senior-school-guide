@@ -16,6 +16,10 @@ theme:
   plugins:
   - search
 
+repo_url: https://github.com/vic2349/senior-school-guide
+
+edit_uri: edit/gh-pages/docs/
+
 extra:
   include:
     - .nojekyll
