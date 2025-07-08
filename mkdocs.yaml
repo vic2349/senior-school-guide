@@ -3,9 +3,12 @@ site_url: https://619.edu.deal/  # 添加这行
 
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.tabs
     - search.suggest
+    - content.code.copy
+    - content.code.select
   palette:
     primary: indigo
     accent: cyan
@@ -129,3 +132,8 @@ nav:
         - 武汉市新洲区第四中学: schools/wu-han-shi-xin-zhou-qu-di-si-zhong-xue.md
         - 武汉市新洲区城关高级中学: schools/wu-han-shi-xin-zhou-qu-cheng-guan-gao-ji-zhong-xue.md
         - 武汉市新洲区阳逻高级中学: schools/wu-han-shi-xin-zhou-qu-yang-luo-gao-ji-zhong-xue.md
+extra_css:
+  - extra.css
+  - https://fontsapi.zeoseven.com/292/main/result.css
+hooks:
+  - docs/overrides/hooks/reading_time.py    # 阅读时间统计

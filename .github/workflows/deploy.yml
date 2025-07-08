@@ -11,7 +11,7 @@ jobs:
     steps:
     # 步骤1：获取代码
     - name: Checkout code
-      uses: actions/checkout@v3  # 下载您的代码
+      uses: actions/checkout@v4  # 下载您的代码
     
     # 步骤2：设置 Python 环境
     - name: Set up Python
