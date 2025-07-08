@@ -137,3 +137,4 @@ extra_css:
   - https://fontsapi.zeoseven.com/292/main/result.css
 hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
+copyright: Copyright &copy; 2025~2025 619&vic2349 # 左下角的版权声明
