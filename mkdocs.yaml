@@ -4,11 +4,14 @@ site_url: https://619.edu.deal/  # 添加这行
 theme:
   name: material
   custom_dir: docs/overrides
+  icon:
+    repo: fontawesome/brands/github  # 使用 FontAwesome 的 GitHub 图标
   features:
     - navigation.tabs
     - search.suggest
     - content.code.copy
     - content.code.select
+    - content.action.edit  # 强制显示编辑按钮（某些版本需要）
   palette:
     primary: indigo
     accent: cyan
