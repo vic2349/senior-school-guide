@@ -6,6 +6,19 @@ theme:
   custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github  # 使用 FontAwesome 的 GitHub 图标
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
   features:
     - navigation.tabs
     - search.suggest
@@ -146,3 +159,7 @@ extra_css:
 hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
 copyright: Copyright &copy; 2025~2025 619&vic2349 # 左下角的版权声明
+markdown_extensions:
+  - admonition  # 基础提示框
+  - pymdownx.details  # 支持折叠框
+  - pymdownx.superfences  # 代码块嵌套支持
