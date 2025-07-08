@@ -40,7 +40,7 @@
 
 感谢大家为本站提出宝贵的建议，您的意见将帮助我们不断改进。
 
-感谢各位开发者在[仓库](https://vic2349.github.io/senior-school-guide/)的贡献，您的付出将让本站更加完善。
+感谢各位开发者在[仓库](https://github.com/vic2349/senior-school-guide)的贡献，您的付出将让本站更加完善。
 
 最后感谢两位刚高考完的开发者[**lifeafter619**](https://66619.eu.org)和[**vic2349**](https://github.com/vic2349)，他们付出了一堆努力让这个项目得以落地。
 
