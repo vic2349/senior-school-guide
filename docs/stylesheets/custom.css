@@ -1,12 +1,11 @@
 /* 增大所有提示框的字体大小 */
 .md-typeset .admonition {
-    font-size: 1.05rem; /* 增大10% */
     line-height: 1.4;   /* 增大行高 */
 }
 
 /* 增大提示框标题字体大小 */
 .md-typeset .admonition-title {
-    font-size: 1.03rem;
+    font-size: 1.02rem;
 }
 
 /* 增大提示框内容字体大小 */
