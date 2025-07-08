@@ -20,6 +20,7 @@ theme:
   - search
 
 repo_url: https://github.com/vic2349/senior-school-guide
+repo_name: vic2349/senior-school-guide
 
 edit_uri: edit/gh-pages/docs/
 
