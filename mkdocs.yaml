@@ -57,7 +57,6 @@ extra:
 
 nav:
   - 首页: index.md
-  - 中考相关: choice.md
 #  - 择校相关:
 #      - 页面一: page1.md  # 增加缩进
 #      - 页面二: page2.md  # 增加缩进
@@ -67,6 +66,7 @@ nav:
         - 武汉市第十五中学: schools/wu-han-shi-di-shi-wu-zhong-xue.md
         - 湖北省武昌实验中学: schools/hu-bei-sheng-wu-chang-shi-yan-zhong-xue.md
         - 武汉市第十四中学: schools/wu-han-shi-di-shi-si-zhong-xue.md
+        - 武汉市蔡甸区汉阳一中: schools/wu-han-shi-cai-dian-qu-han-yang-yi-zhong.md
         - 武汉市第十六中学: schools/wu-han-shi-di-shi-liu-zhong-xue.md
         - 武汉市民族中学: schools/wu-han-shi-min-zu-zhong-xue.md
         - 武汉市第二十中学: schools/wu-han-shi-di-er-shi-zhong-xue.md
@@ -140,7 +140,6 @@ nav:
         - 武汉为明高级中学: schools/wu-han-wei-ming-gao-ji-zhong-xue.md
         - 武汉市汉南第一中学: schools/wu-han-shi-han-nan-di-yi-zhong-xue.md
         - 武汉市汉南第二中学: schools/wu-han-shi-han-nan-di-er-zhong-xue.md
-        - 武汉市蔡甸区汉阳一中: schools/wu-han-shi-cai-dian-qu-han-yang-yi-zhong.md
         - 武汉市蔡甸区实验高级中学: schools/wu-han-shi-cai-dian-qu-shi-yan-gao-ji-zhong-xue.md
         - 武汉枫叶国际学校: schools/wu-han-feng-ye-guo-ji-xue-xiao.md
         - 武汉精英学校: schools/wu-han-jing-ying-xue-xiao.md
@@ -166,6 +165,7 @@ nav:
         - 武汉市新洲区第四中学: schools/wu-han-shi-xin-zhou-qu-di-si-zhong-xue.md
         - 武汉市新洲区城关高级中学: schools/wu-han-shi-xin-zhou-qu-cheng-guan-gao-ji-zhong-xue.md
         - 武汉市新洲区阳逻高级中学: schools/wu-han-shi-xin-zhou-qu-yang-luo-gao-ji-zhong-xue.md
+  - 中考相关: choice.md
 extra_css:
   - stylesheets/custom.css
   - stylesheets/extra.css
