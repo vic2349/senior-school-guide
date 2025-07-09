@@ -57,6 +57,7 @@ extra:
 
 nav:
   - 首页: index.md
+  - 中考相关: choice.md
 #  - 择校相关:
 #      - 页面一: page1.md  # 增加缩进
 #      - 页面二: page2.md  # 增加缩进
