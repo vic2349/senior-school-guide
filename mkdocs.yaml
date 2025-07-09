@@ -21,6 +21,10 @@ theme:
       quote: octicons/quote-16
   features:
     - navigation.tabs
+    - navigation.tracking # 自动高亮当前页面
+    - navigation.top # 顶部导航
+    - navigation.indexes # 页面索引
+    - navigation.sections # 章节导航
     - search.suggest
     - content.code.copy
     - content.code.select
