@@ -3,6 +3,8 @@ site_url: https://619.edu.deal/  # 添加这行
 
 theme:
   name: material
+  palette:
+    scheme: default
   custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github  # 使用 FontAwesome 的 GitHub 图标
@@ -21,7 +23,13 @@ theme:
       quote: octicons/quote-16
   features:
     - navigation.tabs
+    - navigation.tracking # 自动高亮当前页面
+    - navigation.top # 顶部导航
+    - navigation.indexes # 页面索引
+    - navigation.sections # 章节导航
     - search.suggest
+    - navigation.expand
+    - content.tabs.link
     - content.code.copy
     - content.code.select
     - content.action.edit  # 强制显示编辑按钮（某些版本需要）
@@ -38,6 +46,10 @@ repo_name: vic2349/senior-school-guide
 edit_uri: edit/gh-pages/
 
 extra:
+  pagination:
+    enabled: true
+    position: bottom
+    style: modern
   include:
     - .nojekyll
   exclude: 
@@ -45,6 +57,7 @@ extra:
 
 nav:
   - 首页: index.md
+  - 中考相关: choice.md
 #  - 择校相关:
 #      - 页面一: page1.md  # 增加缩进
 #      - 页面二: page2.md  # 增加缩进
@@ -53,6 +66,7 @@ nav:
       - 武汉市:
         - 武汉市第十五中学: schools/wu-han-shi-di-shi-wu-zhong-xue.md
         - 湖北省武昌实验中学: schools/hu-bei-sheng-wu-chang-shi-yan-zhong-xue.md
+        - 武汉市第十四中学: schools/wu-han-shi-di-shi-si-zhong-xue.md
         - 武汉市第十六中学: schools/wu-han-shi-di-shi-liu-zhong-xue.md
         - 武汉市民族中学: schools/wu-han-shi-min-zu-zhong-xue.md
         - 武汉市第二十中学: schools/wu-han-shi-di-er-shi-zhong-xue.md
@@ -91,7 +105,6 @@ nav:
         - 华中师范大学第一附属中学: schools/hua-zhong-shi-fan-da-xue-di-yi-fu-shu-zhong-xue.md
         - 武汉市东湖中学: schools/wu-han-shi-dong-hu-zhong-xue.md
         - 武汉市第三十九中学: schools/wu-han-shi-di-san-shi-jiu-zhong-xue.md
-        - 武汉市第十四中学: schools/wu-han-shi-di-shi-si-zhong-xue.md
         - 湖北大学附属中学: schools/hu-bei-da-xue-fu-shu-zhong-xue.md
         - 武汉中学: schools/wu-han-zhong-xue.md
         - 武汉市武钢三中: schools/wu-han-shi-wu-gang-san-zhong.md
