@@ -35,7 +35,7 @@ theme:
 repo_url: https://github.com/vic2349/senior-school-guide
 repo_name: vic2349/senior-school-guide
 
-edit_uri: edit/gh-pages/docs/
+edit_uri: edit/gh-pages/
 
 extra:
   include:
@@ -51,6 +51,8 @@ nav:
   - 问卷数据:
     - 湖北:
       - 武汉市:
+        - 武汉市第十五中学: schools/wu-han-shi-di-shi-wu-zhong-xue.md
+        - 湖北省武昌实验中学: schools/hu-bei-sheng-wu-chang-shi-yan-zhong-xue.md
         - 武汉市第十六中学: schools/wu-han-shi-di-shi-liu-zhong-xue.md
         - 武汉市民族中学: schools/wu-han-shi-min-zu-zhong-xue.md
         - 武汉市第二十中学: schools/wu-han-shi-di-er-shi-zhong-xue.md
@@ -89,8 +91,6 @@ nav:
         - 华中师范大学第一附属中学: schools/hua-zhong-shi-fan-da-xue-di-yi-fu-shu-zhong-xue.md
         - 武汉市东湖中学: schools/wu-han-shi-dong-hu-zhong-xue.md
         - 武汉市第三十九中学: schools/wu-han-shi-di-san-shi-jiu-zhong-xue.md
-        - 武汉市第十五中学: schools/wu-han-shi-di-shi-wu-zhong-xue.md
-        - 湖北省武昌实验中学: schools/hu-bei-sheng-wu-chang-shi-yan-zhong-xue.md
         - 武汉市第十四中学: schools/wu-han-shi-di-shi-si-zhong-xue.md
         - 湖北大学附属中学: schools/hu-bei-da-xue-fu-shu-zhong-xue.md
         - 武汉中学: schools/wu-han-zhong-xue.md
