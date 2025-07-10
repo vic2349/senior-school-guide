@@ -1,6 +1,5 @@
-{# 添加对 page.meta 的安全检查 #}
-{% if page.meta is defined and page.meta.comments != false %}
-<div id="waline-pageview" style="display: none;">
+{% if page.meta.comments != false %}
+<div id="waline-pageview" style="display: none; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--md-default-fg-color--light);">
   <span class="twemoji">👁️</span>
   <span>浏览量: <span id="waline-pageview-count">0</span></span>
 </div>
