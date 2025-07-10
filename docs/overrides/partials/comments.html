@@ -1,11 +1,7 @@
-{# 使用 defined 检查 page.meta 是否存在 #}
-{% if page.meta is defined and page.meta.comments != false %}
+{% if page.meta.comments != false %}
 <div class="waline-comment-container">
   <h2 id="comments">
     <span class="twemoji">💬</span> 评论区
-    <span class="header-link">
-      <a href="#comments" title="链接">🔗</a>
-    </span>
   </h2>
   <div id="waline-comment"></div>
 </div>

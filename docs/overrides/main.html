@@ -8,11 +8,3 @@
     {% include "partials/comments.html" %}
   {% endif %}
 {% endblock %}
-
-{% block site_meta %}
-  {{ super() }}
-  {# 只在 page 对象存在时添加浏览量统计 #}
-  {% if page and page.meta is defined %}
-    {% include "partials/page-meta.html" %}
-  {% endif %}
-{% endblock %}
