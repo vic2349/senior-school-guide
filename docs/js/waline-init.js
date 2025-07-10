@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // 配置 Waline
       const waline = init({
         el: commentContainer ? '#waline-comment' : null,
-        serverURL: 'https://your-waline-service.vercel.app', // 替换为你的服务地址
+        serverURL: 'https://waline1.619-project.eu.org', // 替换为你的服务地址
         path: window.location.pathname,
         lang: 'zh-CN',
         emoji: [
