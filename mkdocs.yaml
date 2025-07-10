@@ -167,7 +167,7 @@ nav:
         - 武汉市新洲区阳逻高级中学: schools/wu-han-shi-xin-zhou-qu-yang-luo-gao-ji-zhong-xue.md
   - 中考相关: choice.md
 extra_javascript:
-  - https://jsd.66619.eu.org/npm/@waline/client@v3/dist/waline.js
+  - https://jsd.66619.eu.org/npm/@waline/client@v3/dist/waline.umd.js
   - js/waline-init.js
 extra_css:
   - stylesheets/custom.css
