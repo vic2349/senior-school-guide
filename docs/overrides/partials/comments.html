@@ -2,7 +2,23 @@
 <div class="waline-comment-container">
   <h2 id="comments">
     <span class="twemoji">💬</span> 评论区
+    <a href="#comments" class="headerlink" title="链接">🔗</a>
   </h2>
-  <div id="waline-comment"></div>
+  
+  <!-- 加载指示器 -->
+  <div id="waline-loading" class="waline-loading">
+    <div class="loading-spinner">
+      <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none" 
+                stroke-dasharray="15.7 15.7">
+          <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" 
+                            dur="1s" repeatCount="indefinite"/>
+        </circle>
+      </svg>
+      <span>加载评论中...</span>
+    </div>
+  </div>
+  
+  <div id="waline-comment" style="display: none;"></div>
 </div>
 {% endif %}
