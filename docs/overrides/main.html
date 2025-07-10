@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
+  {# 只渲染一次父内容 #}
   {{ super() }}
   
-  {# 在页面底部添加评论区域 #}
+  {# 只在指定位置添加评论容器 #}
   {% if page and page.meta is defined and page.meta.comments != false %}
-    {% include "partials/comments.html" %}
+    <div id="comments-section">
+      {% include "partials/comments.html" %}
+    </div>
   {% endif %}
+{% endblock %}
+
+{% block site_meta %}
+  {# 移除可能存在的重复元素 #}
+  {{ super() | replace('waline-comment-container', '') | safe }}
 {% endblock %}

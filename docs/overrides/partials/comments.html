@@ -1,11 +1,9 @@
-{% if page.meta.comments != false %}
 <div class="waline-comment-container">
   <h2 id="comments">
-    <span class="twemoji">💬</span> 评论区
+    <span class="twemoji">💬</span> 评论
     <a href="#comments" class="headerlink" title="永久链接">¶</a>
   </h2>
   
-  <!-- 加载指示器 -->
   <div id="waline-loading" class="waline-loading">
     <div class="loading-spinner">
       <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -19,6 +17,5 @@
     </div>
   </div>
   
-  <div id="waline-comment" style="display: none;"></div>
+  <div id="waline-comment"></div>
 </div>
-{% endif %}
