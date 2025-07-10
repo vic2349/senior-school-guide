@@ -12,24 +12,22 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     
-    // 检查 Waline 是否已加载
-    if (typeof Waline === 'undefined') {
-      console.error('Waline is not loaded. Make sure waline.js is included before this script.');
+    // 检查 Waline 是否已正确加载
+    if (typeof Waline === 'undefined' || typeof Waline.init === 'undefined') {
+      console.error('Waline is not loaded correctly. Make sure waline.js is included before this script.');
       return;
     }
     
     try {
-      // Waline v3 配置
-      const walineInstance = new Waline({
+      // 使用正确的初始化方式
+      const walineInstance = Waline.init({
         el: '#waline-comment',
-        serverURL: 'https://waline1.619-project.eu.org', // 替换为你的服务地址
+        serverURL: 'https://your-waline-service.vercel.app', // 替换为你的服务地址
         path: window.location.pathname,
         lang: 'zh-CN',
         emoji: [
           'https://unpkg.com/@waline/emojis@1.2.0/weibo',
-          'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
-          'https://unpkg.com/@waline/emojis@1.2.0/qq',
-          'https://unpkg.com/@waline/emojis@1.2.0/tw-emoji'
+          'https://unpkg.com/@waline/emojis@1.2.0/bilibili'
         ],
         pageview: false,
         comment: true,
@@ -48,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
       
-      console.log('Waline v3 initialized successfully.');
+      console.log('Waline initialized successfully.');
       
       // 显示评论框
       commentContainer.style.display = 'block';
@@ -80,26 +78,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
   
-  // 尝试初始化
-  initializeWaline();
-  
-  // 添加重试机制
-  let retryCount = 0;
-  const maxRetries = 3;
-  
-  function checkWalineLoaded() {
-    if (typeof Waline !== 'undefined') {
+  // 初始化函数
+  function init() {
+    // 如果 Waline 已加载，直接初始化
+    if (typeof Waline !== 'undefined' && typeof Waline.init !== 'undefined') {
       initializeWaline();
-    } else if (retryCount < maxRetries) {
-      retryCount++;
-      setTimeout(checkWalineLoaded, 500);
-    } else {
-      console.error('Waline failed to load after multiple attempts');
+    } 
+    // 否则添加重试机制
+    else {
+      let retryCount = 0;
+      const maxRetries = 5;
+      const retryInterval = 500; // 毫秒
+      
+      const retry = () => {
+        retryCount++;
+        if (retryCount > maxRetries) {
+          console.error('Waline initialization failed after retries');
+          return;
+        }
+        
+        console.log(`Retrying Waline initialization (attempt ${retryCount}/${maxRetries})`);
+        
+        if (typeof Waline !== 'undefined' && typeof Waline.init !== 'undefined') {
+          initializeWaline();
+        } else {
+          setTimeout(retry, retryInterval);
+        }
+      };
+      
+      setTimeout(retry, retryInterval);
     }
   }
   
-  // 如果第一次初始化失败，启动重试
-  if (typeof Waline === 'undefined') {
-    setTimeout(checkWalineLoaded, 500);
-  }
+  // 启动初始化
+  init();
+  
+  // 监听主题切换事件
+  document.addEventListener('md-theme-changed', initializeWaline);
 });
