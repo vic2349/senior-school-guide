@@ -170,10 +170,11 @@ extra_javascript:
   - https://jsd.66619.eu.org/npm/@waline/client@v3/dist/waline.umd.js
   - js/waline-init.js
 extra_css:
+  - https://fontsapi.zeoseven.com/292/main/result.css
   - stylesheets/custom.css
   - stylesheets/extra.css
-  - https://fontsapi.zeoseven.com/292/main/result.css
   - https://jsd.66619.eu.org/npm/@waline/client@v3/dist/waline.css
+  - stylesheets/waline-custom.css
 hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
 copyright: Copyright &copy; 2025~2025 619&vic2349 # 左下角的版权声明
