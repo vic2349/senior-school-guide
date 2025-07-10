@@ -36,14 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
         ],
         pageview: false,
         comment: true,
-        reaction: true,
+        reaction: false,
         search: false,
         login: 'enable',
         copyright: false,
         imageUploader: true,
         dark: 'html[data-md-color-scheme="slate"]',
         locale: {
-          placeholder: '留下你的评论... (支持 Markdown 语法)',
+          placeholder: '来随意叭叭，信息都不留也行~\n如果留下邮箱的话，被回复时会有📧通知~',
           sofa: '还没有评论，快来抢沙发吧！'
         }
       });
