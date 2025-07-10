@@ -22,12 +22,17 @@ document.addEventListener('DOMContentLoaded', function() {
       // 使用正确的初始化方式
       const walineInstance = Waline.init({
         el: '#waline-comment',
-        serverURL: 'https://your-waline-service.vercel.app', // 替换为你的服务地址
+        serverURL: 'https://waline1.619-project.eu.org', // 替换为你的服务地址
         path: window.location.pathname,
         lang: 'zh-CN',
         emoji: [
-          'https://unpkg.com/@waline/emojis@1.2.0/weibo',
-          'https://unpkg.com/@waline/emojis@1.2.0/bilibili'
+          'https://cdn.jsdelivr.net/npm/sticker-heo@2022.7.5/Sticker-100/',
+          'https://npm.elemecdn.com/@waline/emojis@1.2.0/qq',
+          'https://npm.elemecdn.com/@waline/emojis@1.2.0/tieba',
+          'https://npm.elemecdn.com/@waline/emojis@1.2.0/weibo',
+          'https://npm.elemecdn.com/@waline/emojis@1.2.0/bilibili',
+          'https://file.66619.eu.org/beluga-emoji',
+          'https://file.66619.eu.org/ikun-emoji'
         ],
         pageview: false,
         comment: true,
@@ -35,9 +40,6 @@ document.addEventListener('DOMContentLoaded', function() {
         search: false,
         login: 'enable',
         copyright: false,
-        meta: ['nick', 'mail', 'link'],
-        requiredMeta: ['nick'],
-        wordLimit: 500,
         imageUploader: true,
         dark: 'html[data-md-color-scheme="slate"]',
         locale: {
