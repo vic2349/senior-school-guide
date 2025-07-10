@@ -166,10 +166,18 @@ nav:
         - 武汉市新洲区城关高级中学: schools/wu-han-shi-xin-zhou-qu-cheng-guan-gao-ji-zhong-xue.md
         - 武汉市新洲区阳逻高级中学: schools/wu-han-shi-xin-zhou-qu-yang-luo-gao-ji-zhong-xue.md
   - 中考相关: choice.md
+extra_javascript:
+  # Waline 客户端 JS
+  - https://npm.elemecdn.com/@waline/client@v2/dist/waline.js
+  
+  # 初始化脚本
+  - js/waline-init.js
 extra_css:
   - stylesheets/custom.css
   - stylesheets/extra.css
   - https://fontsapi.zeoseven.com/292/main/result.css
+  - https://npm.elemecdn.com/@waline/client@v2/dist/waline.css
+  - css/waline-custom.css
 hooks:
   - docs/overrides/hooks/reading_time.py    # 阅读时间统计
 copyright: Copyright &copy; 2025~2025 619&vic2349 # 左下角的版权声明
@@ -177,3 +185,5 @@ markdown_extensions:
   - admonition  # 基础提示框
   - pymdownx.details  # 支持折叠框
   - pymdownx.superfences  # 代码块嵌套支持
+  - attr_list
+  - md_in_html

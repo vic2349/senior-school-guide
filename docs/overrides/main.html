@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  
+  {# 在页面底部添加评论区域 #}
+  {% include "partials/comments.html" %}
+{% endblock %}
+
+{% block site_meta %}
+  {{ super() }}
+  {% include "partials/page-meta.html" %}
+{% endblock %}
