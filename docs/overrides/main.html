@@ -4,10 +4,15 @@
   {{ super() }}
   
   {# 在页面底部添加评论区域 #}
-  {% include "partials/comments.html" %}
+  {% if page and page.meta and page.meta.comments != false %}
+    {% include "partials/comments.html" %}
+  {% endif %}
 {% endblock %}
 
 {% block site_meta %}
   {{ super() }}
-  {% include "partials/page-meta.html" %}
+  {# 只在 page 对象存在时添加浏览量统计 #}
+  {% if page %}
+    {% include "partials/page-meta.html" %}
+  {% endif %}
 {% endblock %}

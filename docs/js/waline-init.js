@@ -1,5 +1,10 @@
 // docs/js/waline-init.js
 
+// 在脚本开头添加
+if (!window.location.pathname || !document.getElementById('waline-comment')) {
+  return;
+}
+
 // 确保 DOM 加载完成
 document.addEventListener('DOMContentLoaded', function() {
   // 检查页面是否有评论容器
