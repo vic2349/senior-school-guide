@@ -58,6 +58,7 @@
 感谢 [**大学生活质量指北**](https://colleges.chat/) 项目的实现思路，如果你有选择大学的需求，可前往查阅相关内容
 
 最后感谢两位刚高考完的开发者[**lifeafter619**](https://66619.eu.org)和[**vic2349**](https://github.com/vic2349)，他们付出了一堆努力让这个项目得以落地。
+![description](https://socialify.git.ci/vic2349/senior-school-guide/image?custom_language=Cloudflare&description=1&font=Source+Code+Pro&issues=1&language=1&name=1&owner=1&pattern=Formal+Invitation&pulls=1&stargazers=1&theme=Auto)
 
 ## LICENSE 
 [Mozilla Public License Version 2.0](https://www.mozilla.org/en-US/MPL/2.0/)
