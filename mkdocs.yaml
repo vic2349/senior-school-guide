@@ -3,8 +3,6 @@ site_url: https://619.edu.deal/  # 添加这行
 
 theme:
   name: material
-  palette:
-    scheme: default
   custom_dir: docs/overrides
   icon:
     repo: fontawesome/brands/github  # 使用 FontAwesome 的 GitHub 图标
@@ -37,7 +35,8 @@ theme:
     primary: indigo
     accent: cyan
   language: zh 
-  plugins:
+
+plugins:
   - search
 
 repo_url: https://github.com/vic2349/senior-school-guide

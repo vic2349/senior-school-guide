@@ -115,6 +115,4 @@ document.addEventListener('DOMContentLoaded', function() {
   // 启动初始化
   init();
   
-  // 监听主题切换事件
-  document.addEventListener('md-theme-changed', initializeWaline);
 });
